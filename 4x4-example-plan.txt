@@ -1,0 +1,6 @@
+(move robot pos-1-2 pos-2-2 right)
+(push-to-nongoal robot block-01 pos-2-2 pos-3-2 pos-4-2 right)
+(move robot pos-3-2 pos-3-1 up)
+(move robot pos-3-1 pos-4-1 right)
+(push-to-nongoal robot block-01 pos-4-1 pos-4-2 pos-4-3 down)
+(push-to-goal robot block-01 pos-4-2 pos-4-3 pos-4-4 down)
