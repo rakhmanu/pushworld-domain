@@ -1,8 +1,6 @@
 (define (domain ulzhal)
   (:requirements :typing :equality)
-  (:types thing - thing
-   location - location
-   direction - direction
+  (:types thing location direction 
 )
   (:predicates 
 	(move-dir ?v0 - location ?v1 - location ?v2 - direction)
