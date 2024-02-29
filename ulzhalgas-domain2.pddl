@@ -1,9 +1,11 @@
 (define (domain ulzhal)
-  (:requirements :typing )
+  (:requirements :typing :equality)
   (:types thing - thing
    location - location
-   direction - direction)
-  (:predicates (move-dir ?v0 - location ?v1 - location ?v2 - direction)
+   direction - direction
+)
+  (:predicates 
+	(move-dir ?v0 - location ?v1 - location ?v2 - direction)
 	(is-nongoal ?v0 - location)
 	(clear ?v0 - location)
 	(is-block ?v0 - thing)
@@ -13,9 +15,6 @@
 	(move ?v0 - direction)
 	(is-goal ?v0 - location)
   )
-
-  ; (:actions move)
-
   
 
 	(:action move
