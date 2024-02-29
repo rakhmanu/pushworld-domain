@@ -42,10 +42,7 @@
 	(is-nongoal pos-3-3)
 	(is-agent robot)
 	(is-block block-01)
-	(move up)
-	(move right)
-	(move left)
-	(move down)
+	
     	(move-dir pos-1-1 pos-1-2 down)
     	(move-dir pos-1-1 pos-2-1 right)
     	(move-dir pos-1-2 pos-2-2 right)
