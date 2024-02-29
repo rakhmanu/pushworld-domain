@@ -1,4 +1,5 @@
-(define (problem p01) (:domain ulzhal)
+(define (problem p01) 
+  (:domain ulzhal)
   (:objects
         down - direction
     	left - direction
@@ -20,9 +21,6 @@
     	block-01 - thing
     	
   )
-  (:goal (and
-	(at-goal block-01)))
-
   (:init 
 	(at robot pos-1-2)
 	(at block-01 pos-3-2)
@@ -73,4 +71,8 @@
 	(move-dir pos-3-3 pos-2-3 left)
 	(move-dir pos-3-3 pos-3-2 up)
 	
-))
+)
+(:goal (and
+	(at-goal block-01)))
+
+)
