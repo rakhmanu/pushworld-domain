@@ -12,14 +12,13 @@
 	(at ?v0 - thing ?v1 - location)
 	(is-agent ?v0 - thing)
 	(at-goal ?v0 - thing)
-	(move ?v0 - direction)
 	(is-goal ?v0 - location)
   )
   
 
 	(:action move
 		:parameters (?p - thing ?from - location ?to - location ?dir - direction)
-		:precondition (and (move ?dir)
+		:precondition (and 
 			(is-agent ?p)
 			(at ?p ?from)
 			(clear ?to)
@@ -34,7 +33,7 @@
 
 	(:action push-to-goal
 		:parameters (?p - thing ?s - thing ?ppos - location ?from - location ?to - location ?dir - direction)
-		:precondition (and (move ?dir)
+		:precondition (and 
 			(is-agent ?p)
 			(is-block ?s)
 			(at ?p ?ppos)
@@ -56,7 +55,7 @@
 
 	(:action push-to-nongoal
 		:parameters (?p - thing ?s - thing ?ppos - location ?from - location ?to - location ?dir - direction)
-		:precondition (and (move ?dir)
+		:precondition (and 
 			(is-agent ?p)
 			(is-block ?s)
 			(at ?p ?ppos)
